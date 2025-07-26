@@ -1,41 +1,129 @@
-/* Reset some default styling */
-body, h1, h2, p, ul {
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
 body {
-  font-family: Arial, sans-serif;
-  line-height: 1.6;
-  background-color: #f4f4f4;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f7f7f7;
   color: #333;
-  padding: 20px;
+  line-height: 1.6;
 }
 
 header {
-  background-color: #4CAF50;
+  background: url('https://source.unsplash.com/1600x400/?technology') no-repeat center center/cover;
   color: white;
-  padding: 20px 10px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+  color: #ffcc00;
+}
+
+.hero {
   text-align: center;
-  border-radius: 8px;
+  padding: 4rem 2rem;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background: #ffcc00;
+  color: #333;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background: #e6b800;
 }
 
 main {
-  margin-top: 20px;
+  padding: 3rem 2rem;
 }
 
-section {
-  margin-bottom: 20px;
+.features {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.feature {
+  flex: 1 1 30%;
   background: white;
-  padding: 15px;
-  border-radius: 8px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.feature:hover {
+  transform: translateY(-5px);
 }
 
 footer {
   text-align: center;
-  margin-top: 40px;
-  font-size: 0.9em;
-  color: #777;
+  padding: 2rem;
+  background: #333;
+  color: white;
+  margin-top: 3rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .features {
+    flex-direction: column;
+  }
+
+  .hero h1 {
+    font-size: 2.2rem;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 1rem;
+  }
 }

@@ -1,36 +1,48 @@
-=<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Sample Page</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Responsive Sample Page</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <header>
-    <h1>Welcome to My Sample Page</h1>
+    <nav class="navbar">
+      <div class="logo">MySite</div>
+      <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Features</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="hero">
+      <h1>Welcome to MySite</h1>
+      <p>Your gateway to awesome web experiences.</p>
+      <a href="#" class="btn">Get Started</a>
+    </div>
   </header>
 
   <main>
-    <section>
-      <h2>About This Page</h2>
-      <p>This is a basic HTML and CSS template to get started quickly.</p>
-      <p>Here We are Trying to Modify and update the file in git.</p>
-
-    </section>
-
-    <section>
-      <h2>Features</h2>
-      <ul>
-        <li>Simple layout</li>
-        <li>Responsive design</li>
-        <li>Easy to customize</li>
-      </ul>
+    <section class="features">
+      <div class="feature">
+        <h2>Fast</h2>
+        <p>Our site loads in seconds and is fully optimized for speed.</p>
+      </div>
+      <div class="feature">
+        <h2>Responsive</h2>
+        <p>Looks great on desktops, tablets, and phones.</p>
+      </div>
+      <div class="feature">
+        <h2>Customizable</h2>
+        <p>Easily tailor it to your needs with minimal code.</p>
+      </div>
     </section>
   </main>
 
   <footer>
-    <p>&copy; 2025 Sample Project</p>
+    <p>&copy; 2025 MySite. All rights reserved.</p>
   </footer>
 </body>
 </html>
