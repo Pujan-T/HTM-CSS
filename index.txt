@@ -3,3 +3,5 @@ hello world
 This is commit ammend test
 
 this is new change
+
+this will be missing in commit
